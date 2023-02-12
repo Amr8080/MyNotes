@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled6/views/NotesView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MyNotes',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: 'Poppins',
+        brightness: Brightness.dark,
       ),
       home: const MyNotes(),
     );
@@ -22,6 +24,6 @@ class MyNotes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return NotesView();
   }
 }
