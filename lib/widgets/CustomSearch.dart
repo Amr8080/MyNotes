@@ -9,7 +9,7 @@ class CustomSearch extends StatelessWidget {
       width: 47,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: Colors.white.withOpacity(.05),
+        color: Colors.transparent,
       ),
       child: Icon(Icons.search),
     );
