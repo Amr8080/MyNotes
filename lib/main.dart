@@ -3,11 +3,12 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:untitled6/porvider/DarkThemeProvider.dart';
 import 'package:untitled6/views/NotesView.dart';
-
+import 'package:hive_flutter/hive_flutter.dart';
 import 'consts/theme_data.dart';
 
-void main() {
-
+void main()async {
+ await Hive.initFlutter();
+ await Hive.openBox('note_box');
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((_) {
